@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1 id="resultado"></h1>
+    <script>
+        let nome1=(prompt("Digite o primeiro nome"));
+        let peso1=Number(prompt("Digite o primeiro peso"));
+        let nome2=(prompt("Digite o segundo nome"));
+        let peso2=Number(prompt("Digite o segundo peso"));
+        let nome3=(prompt("Digite o terceiro nome"));
+        let peso3=Number(prompt("Digite o terceiro peso"));
+        let resul;
+        let maior;
+        let menor;
+        let medio;
+
+        if(peso2 > peso1 && peso3 > peso2){
+            
+            maior = peso2;
+            medio = peso3;
+            menor = peso1;
+        //resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + menor;
+    }
+
+    else if(peso3 > peso2){
+        maior = peso3;
+        medio = peso1;
+        menor = peso2
+        //resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + maior;
+        
+    }
+
+    if(peso2 > peso1 ){
+        maior = peso3;
+        medio = peso2;
+        menor = peso1;
+       // resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + menor;
+
+    }else{
+        maior = peso1;
+        medio = peso2;
+        menor = peso3;
+    }
+
+
+        
+        resul= " O/A 1 " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A 2" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A 3 "  + nome3 + " é  terceiro peso: " + menor;
+
+        document.getElementById("resultado").innerHTML=resul
+            
+
+
+
+    </script>
+    
+</body>
+</html>

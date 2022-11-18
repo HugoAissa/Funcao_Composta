@@ -1,0 +1,73 @@
+4. Observe o trecho do algoritmo a seguir.
+
+início
+
+| :
+
+| :
+
+| :
+
+| se X >= Y
+
+| | então W ß falso
+
+| | senão Wß verdadeiro
+
+| fim-se
+
+| :
+
+| :
+
+fim
+
+O valor armazenado na variável W é verdadeiro se:
+
+( ) X < Y
+
+( ) X > Y
+
+( ) X >= Y
+
+( x ) X <= Y
+
+( ) X = Y
+
+( ) Nenhuma das anteriores
+
+5. Observe o trecho do algoritmo a seguir.
+
+início
+
+| :
+
+| :
+
+| se (X >= Y) e ( Z =< Y)
+
+| | então W ß 10
+
+| | senão Wß 20
+
+| fim-se
+
+| :
+
+| :
+
+fim
+
+O valor armazenado na variável W é 20 se:
+
+( ) X < Y < Z
+
+( x ) X <= Y <= Z
+
+( ) X < Y <= Z
+
+( ) Y < X < Z
+
+( ) Z < X < Y
+
+( ) Nenhuma das anteriores

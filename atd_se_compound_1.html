@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de função SE Composta</title>
+</head>
+<body>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        alert("Olá :D")
+        let nota1 = Number(prompt("Digite a primeira nota do aluno"));
+        let nota2 = Number(prompt("Digite a segunda nota do aluno"));
+        let nota3 = Number(prompt("Digite a terceira nota do aluno"))
+        let resul;
+        let media1 = Number(nota1+nota2+nota3)/3;
+        let maior;
+        let menor;
+        let medio;
+
+        if(media1 >= 6){
+            resul2 = "Média superior à média mínima (6,0) Media:" ;
+        }
+    
+        if(media1 <= 6){
+            resul2 = "Média inferior à média mínima (6,0) Media";
+        }        
+        console.log(media1)
+  
+        if(nota2 > nota1 && nota3 > nota2){
+            
+            maior = nota2;
+            medio = nota3;
+            menor = nota1;
+        //resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + menor;
+    }
+
+    else if(nota3 > nota2){
+        maior = nota3;
+        medio = nota2;
+        menor = nota1
+        //resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + maior;
+        
+    }
+
+    if(nota2 > nota1 ){
+        maior = nota3;
+        medio = nota1;
+        menor = nota2;
+       // resul= " O/A " + nome1 + " é primeiro peso: " + maior + "<br>" + " O/A" + nome2 + " é o segundo peso: " + medio + "<br>" + " O/A "  + nome3 + " é  terceiro peso: " + menor;
+
+    }else{
+        maior = nota1;
+        medio = nota2;
+        menor = nota3;
+    }
+
+
+    
+
+        resul= " A primeira nota é  " + maior + "<br>" + " A segunda nota é   " + medio + "<br>"+ " A terceira nota é  "+ menor + "<br>"+ "A media da notas são media: " + media1
+        
+ 
+        document.getElementById("resultado").innerHTML=resul;
+
+
+    </script>
+    
+</body>
+</html>

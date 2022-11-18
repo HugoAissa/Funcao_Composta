@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1>Calculo de comissão </h1>
+    <div id="resultado"></div>
+    <div id="resultado1"></div>
+
+    <script>
+        alert("Olá :D")
+        let nome = prompt("Digite o nome do funcionario")
+        let qtd = prompt("Digite a quantidade de venda")
+        let comi;
+    
+
+        
+
+
+        if(qtd < 250){
+          comi = 1;
+            document.getElementById("resultado1").innerHTML= "O/A "+ nome +" recebera: " + Number(qtd * comi)
+
+        }else if(qtd < 500){
+            comi = 1.5;
+            resul =   " Comissão, com venda superior de 200 " + " O/A " + nome+ " recebera: " + Number(qtd * comi)
+              
+        }else{
+            comi = 2;
+            
+
+         
+        }
+        
+        document.getElementById("resultado").innerHTML=resul
+        
+    </script>
+</body>
+</html>

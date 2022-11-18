@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+<h1 id="resultado"></h1>
+
+<script>
+    alert("Olá :D")
+    let dia1= prompt("Digite o o dia")
+    let mes= prompt("Digite o mes ")
+    let ano= prompt("Digite o ano")
+    let resul
+    
+    if(mes == 1){
+        resul = dia1 + " Janeiro de " + ano 
+    }else{
+        if(mes == 2){
+            resul = dia1 + " Fevereiro de " + ano
+        }
+    }
+
+    if(mes == 3){
+        resul = dia1 + " Março de " + ano
+    }else{
+        if(mes == 4){
+            resul = dia1 + " Abril de " + ano 
+    }   }
+
+    if(mes == 5){
+        resul = dia1 + " Maio de " + ano
+    }else{
+        if(mes == 6){
+            resul = dia1 + " Junho de " + ano 
+    }   }
+
+    if(mes == 7){
+        resul = dia1 + " Julho de " + ano
+    }else{
+        if(mes == 8){
+            resul = dia1 + " Agosto de " + ano 
+    }   }
+
+    if(mes == 9){
+        resul = dia1 + " Setembro de " + ano
+    }else{
+        if(mes == 10){
+            resul = dia1 + " Outubro de " + ano 
+    }   }
+
+    if(mes == 11){
+        resul = dia1 + " Novembro de " + ano
+    }else{
+        if(mes == 12){
+            resul = dia1 + " Dezembro de " + ano 
+    }   }
+    
+    document.getElementById("resultado").innerHTML=resul
+</script>
+
+</body>
+</html>

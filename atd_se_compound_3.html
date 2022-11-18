@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h1 id="resultado"></h1>
+    <script>
+        alert("Olá :D")
+        let cod = (prompt("Digite o codigo do produto")); 
+        let resul;
+
+        if(cod == 1){
+             resul = "Big Super Sanduba" + "<br>" + "2 hamburgueres, queijo, batata frita e refrigerante"+"<br>"+"Preço R$:5,00";
+        }else{
+            if(cod == 2){
+                resul = "Quase Super Sanduba" +"<br>" + "1 hambuerguer batata frita e refrigerante"+"Preço R$:3,00";
+        }else{
+        if(cod == 3){
+             resul = "Mirrandus Sanduba" +"<br>" + "1 misto quente e refrigerante" +"<br>" + "Preço R$:1,50";
+        }}}
+
+        document.getElementById("resultado").innerHTML=resul;
+
+    </script>
+    
+</body>
+</html>
